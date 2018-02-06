@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'bmitra';
+    src: local('BMitra'), local('B Mitra'),  url('../fonts/BMitra.eot');
+    src: local('BMitra'), local('B Mitra'),  url('../fonts/BMitra.woff')  format('woff');
+    src: local('BMitra'), local('B Mitra'),  url('../fonts/BMitra.ttf') format('truetype');
+}
+
+* {
+    font-family: 'bmitra';
+    direction: rtl;
+}
+
+#backgr {
+    background-image: url('../images/bkgrd.jpg');
+    background-size: cover;
+    background-position: center; 
+}
+
+.header {
+    background-color: orange;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.header h1{
+    font-size: 350%;
+    margin-top: 10px;
+    color: #2c2c2c;
+}
+
+#what_is_it img{
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 0;
+    max-width: 100%;
+    width: 45%;
+}
+
+.question_box {
+    background-color: lightblue;
+    padding: 20px 15px;
+    border-radius: 5px;
+    font-size: 200%;
+    display: none;
+}
+
+#q1, q3, q4, q5, q6, q7, q8,
+#question1_option_a,
+#question1_option_b,
+#question1_option_c,
+#question1_option_d,
+#question1_option_e,
+#question1_option_f,
+#question3_option_a,
+#question3_option_b,
+#question3_option_c,
+#question3_option_d,
+#question3_option_c_item1,
+#question3_option_c_item2,
+#question4_option_a,
+#question4_option_b,
+#question4_option_c,
+#question4_option_d,
+#question5_option_a,
+#question5_option_b,
+#question5_option_c,
+#question8_option_a,
+#question8_option_b,
+#question8_option_c,
+#question8_option_d,
+#question8_option_e,
+#question8_option_f{
+    display: none;
+}
+
+.question_box_top {
+    text-align: center
+}
+
+.question_options button {
+    margin-bottom: 6px;
+}
+.start {
+    padding: 10px;
+    width: 25%;
+    margin: 25px 10% 10px 65%;
+    font-size: 150%;
+    font-family: 'bmitra';
+}
+
+#start_btn_id {
+    font-size: 200%;
+}
+
+.pager li a {
+    color: #2e2e2e; 
+}
+
+.btn-lg {
+    font-size: 200%;
+}
+
+.pre-question button {
+    font-size: 120%;
+    margin-top: 20px;
+}
+
+.language_pics {
+    display: block;
+    margin: auto;
+    width: 60%;
+}

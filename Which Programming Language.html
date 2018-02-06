@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Which Programming Language</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/query.css">
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container" id="backgr">
+    <div class="header">
+        <h1>کدام زبان برنامه نویسی را ابتدا یاد بگیرم؟</h1>      
+    </div>
+
+    <div id="what_is_it">
+        <img src="images/7.PNG" alt="What is Programming?">
+    </div>
+
+    <button id="start_btn_id" onclick="start_btn()" class="start btn btn-success btn-lg">شروع</button>
+    
+    <!-- Question 1 -->
+    <!-- first div is for all q1 and options -->
+    <div>
+    <div class="question_box" id="q1">
+        <div class="question_box_top">
+            <p>چرا میخواهید برنامه نویسی یاد بگیرید؟</p>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question1_option_a()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">برای تفریح</button>
+                </p>
+                <p>
+                    <button onclick="question1_option_b()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">برای فرزندانم</button>
+                </p>
+                <p>
+                    <button onclick="question1_option_c()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">برای پول درآوردن</button>
+                </p>
+                <p>
+                    <button onclick="question1_option_a()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">برای پیشرفت خودم</button>
+                </p>
+                <p>
+                    <button onclick="question1_option_a()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">برای اینکه علاقه مندم</button>
+                </p>
+                <p>
+                    <button onclick="question1_option_f()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">نمیدونم! یکی رو برام انتخاب کن</button>
+                </p>
+                <div class="pre-question">
+                        <a href="Which Programming Language.html"><button class="btn btn-default col-md-6">برگشت به صفحه اول</button></a>
+                    </div>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- Question 1 - Option A -->
+    <div class="question_box" id="question1_option_a">
+        <div class="question_box_top">
+                <p>آیا یک ایده یا پلتفرم بزرگ در ذهن دارید؟</p>
+            </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question1_option_a_gozine1()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">بله</button>
+                </p>
+                <p>
+                    <button onclick="question1_option_a_gozine2()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">نه! فقط میخواهم شروع کنم</button>
+                </p>
+
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal1_optionA namayan ast -->
+                    <button 
+                        onclick="pre_question_q1_option_a()"
+                        class="btn btn-default col-md-4">سوال قبلی
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- Question 1 - Option B -->
+    <div class="question_box" id="question1_option_b">
+        <div class="question_box_top">
+                <p>زبان پایتون رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="https://www.raspberrypi.org/documentation/usage/python/images/python-logo.png">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q1_option_b()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+    
+    <!-- Question 1 - Option C -->
+    <div class="question_box" id="question1_option_c">
+        <div class="question_box_top">
+                <p>کدوم گزینه؟</p>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question1_option_c_gozine1()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">میخوام یه شغل پیدا کنم</button>
+                </p>
+                <p>
+                    <button onclick="question1_option_c_gozine2()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">من یه ایده استارت آپی دارم!</button>
+                </p>
+
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal1_optionC namayan ast -->
+                    <button 
+                        onclick="pre_question_q1_option_c()"
+                        class="btn btn-default col-md-4">سوال قبلی
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Question 1 - Option D  -->
+    <div class="question_box" id="question1_option_d">
+        <div class="question_box_top">
+                <p>آیا یک ایده یا پلتفرم بزرگ در ذهن دارید؟</p>
+            </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question1_option_a_gozine1()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">بله</button>
+                    </p>
+                <p>
+                    <button onclick="question1_option_a_gozine1()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">نه! فقط میخواهم شروع کنم</button>
+                </p>
+
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal1_optionD namayan ast -->
+                    <button 
+                        onclick="pre_question_q1_option_d()"
+                        class="btn btn-default col-md-4">سوال قبلی
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- Question 1 - Option E  -->
+    <div class="question_box" id="question1_option_e">
+        <div class="question_box_top">
+                <p>آیا یک ایده یا پلتفرم بزرگ در ذهن دارید؟</p>
+            </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question1_option_a_gozine1()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">بله</button>
+                    </p>
+                <p>
+                    <button onclick="question1_option_a_gozine1()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">نه! فقط میخواهم شروع کنم</button>
+                </p>
+
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal1_optionE namayan ast -->
+                    <button 
+                        onclick="pre_question_q1_option_e()"
+                        class="btn btn-default col-md-4">سوال قبلی
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- Question 1 - Option F  -->
+    <div class="question_box" id="question1_option_f">
+        <div class="question_box_top">
+            <p>زبان پایتون رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="https://www.raspberrypi.org/documentation/usage/python/images/python-logo.png">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionF namayan ast -->
+            <button 
+                onclick="pre_question_q1_option_f()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>    
+    </div>
+    </div>
+    
+    <!-- Question 3 -->
+    <!-- first div is for all q3 and options -->
+    <div>
+    <div class="question_box" id="q3">
+        <div class="question_box_top">
+                <p>من ترجیح میدهم چیزها را یاد بگیرم از ...</p>
+            </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question3_option_a()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">راه آسان</button>
+                </p>
+                <p>
+                    <button onclick="question3_option_a()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">بهترین راه</button>
+                </p>
+                <p>
+                    <button onclick="question3_option_c()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">راه کمی سخت تر</button>
+                </p><p>
+                    <button onclick="question3_option_d()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">یک راه بسیار سخت (اما در آینده کار با زبان های دیگر آسان میشود)</button>
+                </p>
+
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal3 namayan ast -->
+                    <button 
+                        onclick="pre_question_q3()"
+                        class="btn btn-default col-md-4">سوال قبلی
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- Question 3 - Option A -->
+    <div class="question_box" id="question3_option_a">
+        <div class="question_box_top">
+                <p>زبان پایتون رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="https://www.raspberrypi.org/documentation/usage/python/images/python-logo.png">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q3_option_a()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+    
+    <!-- Question 3 - Option B -->
+    <div class="question_box" id="question3_option_b">
+        <div class="question_box_top">
+                <p>زبان پایتون رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="https://www.raspberrypi.org/documentation/usage/python/images/python-logo.png">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q3_option_b()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+    
+    <!-- Question 3 - Option C -->
+    <div class="question_box" id="question3_option_c">
+        <div class="question_box_top">
+                <p>کدوم ماشین رو ترجیح میدی؟</p>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="q3_option_c_item1()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">ماشین دنده ای</button>
+                </p>
+                <p>
+                    <button onclick="q3_option_c_item2()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">ماشین اتوماتیک</button>
+                </p>
+
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal1_optionC namayan ast -->
+                    <button 
+                        onclick="pre_question_q3_option_c()"
+                        class="btn btn-default col-md-4">سوال قبلی
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Question 3 - Option C - Item 1 -->
+    <div class="question_box" id="question3_option_c_item1">
+        <div class="question_box_top">
+                <p>زبان C رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/2000px-The_C_Programming_Language_logo.svg.png">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q3_option_c_item1()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+    
+    <!-- Question 3 - Option C - Item 2 -->
+    <div class="question_box" id="question3_option_c_item2">
+        <div class="question_box_top">
+                <p>زبان Java رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="https://academy.oracle.com/en/oa-assets/i/c82/c82-java-prog-logo.jpg">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q3_option_c_item2()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+    
+    <!-- Question 3 - Option D -->
+    <div class="question_box" id="question3_option_d">
+        <div class="question_box_top">
+                <p>زبان سی پلاس پلاس رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="http://www.trainingincoimbatore.in/assets/custom/img/c-c-plus-plus-training-in-coimbatore.jpg">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q3_option_d()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+    
+    </div> <!-- div for all q3 and options -->
+    
+    <!-- Question 4 -->
+    <!-- first div is for all q4 and options -->
+    <div>
+    <div class="question_box" id="q4">
+        <div class="question_box_top">
+            <p>در چه زمینه ای؟</p>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question4_option_a()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">وب</button>
+                </p>
+                <p>
+                    <button onclick="question4_option_b()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">موبایل</button>
+                </p>
+                <p>
+                    <button onclick="question4_option_c()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">بازی / سه بعدی</button>
+                </p>
+                <p>
+                    <button onclick="question4_option_d()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">سرمایه گذاری کلان</button>
+                </p>
+
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal3 namayan ast -->
+                    <button onclick="pre_question_q4()" class="btn btn-default col-md-4">سوال قبلی
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- Question 4 - Option A -->
+    <div class="question_box" id="question4_option_a">
+        <div class="question_box_top">
+            <p>آیا اپلیکیشن شما اطلاعات را بصورت لحظه ای ارائه میکند (مثل توئیتر)؟</p>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question4_option_a_gozine1()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">بله</button>
+                </p>
+                <p>
+                    <button onclick="question4_option_a_gozine2()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">نه</button>
+                </p>
+
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal1_optionA namayan ast -->
+                    <button onclick="pre_question_q4_option_a()"
+                        class="btn btn-default col-md-4">سوال قبلی</button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+        <!-- Question 4 - Option a - Item 1 -->
+        <div class="question_box" id="question4_option_a_gozine1">
+            <div class="question_box_top">
+                    <p>زبان Javascript رو یاد بگیر!</p>
+            </div>
+            <hr>
+            <div>
+                <img class="language_pics" alt="Python Logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmzY5Lrom18FVft0NsSsQJX98O44n75UfAfv9Ipn5YC-wLCDGAw">
+            </div>
+            <div class="question_box_top pre-question">
+                <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+                <button 
+                    onclick="pre_question_q4_option_a_item1()"
+                    class="btn btn-default">سوال قبلی
+                </button>
+            </div>
+        </div>
+        
+    <!-- Question 4 - Option B -->
+    <div class="question_box" id="question4_option_b">
+        <div class="question_box_top">
+            <p>چه سیستم عاملی؟</p>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question4_option_b_gozine1()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">iOS</button>
+                </p>
+                <p>
+                    <button onclick="question4_option_b_gozine2()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">Android</button>
+                </p>
+
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal1_optionA namayan ast -->
+                    <button onclick="pre_question_q4_option_b()"
+                        class="btn btn-default col-md-4">سوال قبلی</button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+        <!-- Question 4 - Option b - Item 1 -->
+        <div class="question_box" id="question4_option_b_item1">
+            <div class="question_box_top">
+                    <p>زبان Objective-C رو یاد بگیر!</p>
+            </div>
+            <hr>
+            <div>
+                <img class="language_pics" alt="Objective-C Logo" src="http://blog.ittestsonline.com/wp-content/uploads/2015/01/objective-c.gif">
+            </div>
+            <div class="question_box_top pre-question">
+                <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+                <button 
+                    onclick="pre_question_q4_option_b_item1()"
+                    class="btn btn-default">سوال قبلی
+                </button>
+            </div>
+        </div>
+
+        <!-- Question 4 - Option b - Item 2 -->
+        <div class="question_box" id="question4_option_b_item2">
+            <div class="question_box_top">
+                    <p>زبان Java رو یاد بگیر!</p>
+            </div>
+            <hr>
+            <div>
+                <img class="language_pics" alt="Java Logo" src="https://academy.oracle.com/en/oa-assets/i/c82/c82-java-prog-logo.jpg">
+            </div>
+            <div class="question_box_top pre-question">
+                <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+                <button 
+                    onclick="pre_question_q4_option_b_item2()"
+                    class="btn btn-default">سوال قبلی
+                </button>
+            </div>
+        </div>
+        
+    <!-- Question 4 - Option C -->
+    <div class="question_box" id="question4_option_c">
+        <div class="question_box_top">
+                <p>زبان سی پلاس پلاس رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="http://www.trainingincoimbatore.in/assets/custom/img/c-c-plus-plus-training-in-coimbatore.jpg">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q4_option_c()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+    </div>
+    
+    <!-- Question 5 -->
+    <!-- first div is for all q4 and options -->
+    <div>
+    <div class="question_box" id="q5">
+        <div class="question_box_top">
+            <p>نظرتون در مورد مایکروسافت چیه؟</p>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question5_option_a()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">عالیه</button>
+                </p>
+                <p>
+                    <button onclick="question5_option_b()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">بد نیست</button>
+                </p>
+                <p>
+                    <button onclick="question5_option_b()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">مزخرفه</button>
+                </p>
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal3 namayan ast -->
+                    <button onclick="pre_question_q5()" class="btn btn-default col-md-4">سوال قبلی
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </div>
+        
+    ّ<!-- Question 5 - Option A -->
+    <div class="question_box" id="question5_option_a">
+        <div class="question_box_top">
+                <p>زبان سی شارپ رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="https://uploads.toptal.io/blog/category/logo/16/c_sharp.png">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q5_option_a()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+        
+    <!-- Question 5 - Option B-->
+    <div class="question_box" id="question5_option_b">
+        <div class="question_box_top">
+                <p>زبان Java رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="https://academy.oracle.com/en/oa-assets/i/c82/c82-java-prog-logo.jpg">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q5_option_b()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+    </div>    
+    
+    <!-- Question 6 -->
+    <!-- first div is for all q6 and options -->
+    <div>
+    <div class="question_box" id="q6">
+        <div class="question_box_top">
+            <p>آیا میخواهید یک زبان با پتانسیل بالا اما نوپا را امتحان کنید؟</p>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question6_option_a()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">نه</button>
+                </p>
+                <p>
+                    <button onclick="question6_option_b()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">بله</button>
+                </p>
+                <p>
+                    <button onclick="question6_option_a()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">مطمئن نیستم</button>
+                </p>
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal3 namayan ast -->
+                    <button onclick="pre_question_q6()" class="btn btn-default col-md-4">سوال قبلی
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- Question 6 - Option b -->
+        <div class="question_box" id="question6_option_b">
+            <div class="question_box_top">
+                    <p>زبان Javascript رو یاد بگیر!</p>
+            </div>
+            <hr>
+            <div>
+                <img class="language_pics" alt="Python Logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmzY5Lrom18FVft0NsSsQJX98O44n75UfAfv9Ipn5YC-wLCDGAw">
+            </div>
+            <div class="question_box_top pre-question">
+                <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+                <button 
+                    onclick="pre_question_q6_option_b()"
+                    class="btn btn-default">سوال قبلی
+                </button>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- Question 7 -->
+    <!-- first div is for all q7 and options -->
+    <div>
+    <div class="question_box" id="q7">
+        <div class="question_box_top">
+            <p>اسباب بازی مورد علاقه شما کدام است؟</p>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question7_option_a()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">لگو</button>
+                </p>
+                <p>
+                    <button onclick="question7_option_b()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">خمیر بازی</button>
+                </p>
+                <p>
+                    <button onclick="question7_option_c()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">یک اسباب بازی قدیمی که بشدت دوستش دارم</button>
+                </p>
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal3 namayan ast -->
+                    <button onclick="pre_question_q7()" class="btn btn-default col-md-4">سوال قبلی
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    ّ
+    <!-- Question 7 - Option a -->
+    <div class="question_box" id="question7_option_a">
+        <div class="question_box_top">
+                <p>زبان پایتون رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="https://www.raspberrypi.org/documentation/usage/python/images/python-logo.png">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q7_option_a()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+        
+    <!-- Question 7 - Option B -->
+    <div class="question_box" id="question7_option_b">
+        <div class="question_box_top">
+                <p>زبان روبی رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="https://qph.ec.quoracdn.net/main-qimg-bf864bc5278fd4f4facdf39673bb6d37">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q7_option_b()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+        
+    <!-- Question 7 - Option C -->
+    <div class="question_box" id="question7_option_c">
+        <div class="question_box_top">
+                <p>زبان PHP رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Webysther_20160423_-_Elephpant.svg/200px-Webysther_20160423_-_Elephpant.svg.png">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q7_option_c()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+    </div>
+        
+    <!-- Question 8 -->
+    <!-- first div is for all q8 and options -->
+    <div>
+    <div class="question_box" id="q8">
+        <div class="question_box_top">
+            <p>در چه زمینه ای؟</p>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question8_option_a()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">وب</button>
+                </p>
+                <p>
+                    <button onclick="question8_option_b()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">موبایل</button>
+                </p>
+                <p>
+                    <button onclick="question8_option_c()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">بازی / سه بعدی</button>
+                </p>
+                <p>
+                    <button onclick="question8_option_d()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">سرمایه گذاری کلان</button>
+                </p>
+                <p>
+                    <button onclick="question8_option_e()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">فرقی ندارد، من فقط $$$ میخواهم</button>
+                </p>
+                <p>
+                    <button onclick="question8_option_f()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">میخواهم برای شرکت های بزرگ تکنولوژی کار کنم</button>
+                </p>
+
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal3 namayan ast -->
+                    <button onclick="pre_question_q8()" class="btn btn-default col-md-4">سوال قبلی
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- Question 8 - Option A -->
+    <div class="question_box" id="question8_option_a">
+        <div class="question_box_top">
+            <p>کدوم؟</p>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question8_option_a_gozine1()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">Front-End Programming (طراحی رابط کاربری وب)</button>
+                </p>
+                <p>
+                    <button onclick="question8_option_a_gozine2()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">Back-End Programming (مغز متفکر پشت یک وبسایت)</button>
+                </p>
+
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal1_optionA namayan ast -->
+                    <button onclick="pre_question_q8_option_a()"
+                        class="btn btn-default col-md-4">سوال قبلی</button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- Question 8 - Option a - Item 1 -->
+    <div class="question_box" id="question8_option_a_gozine1">
+            <div class="question_box_top">
+                    <p>زبان Javascript رو یاد بگیر!</p>
+            </div>
+            <hr>
+            <div>
+                <img class="language_pics" alt="Python Logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmzY5Lrom18FVft0NsSsQJX98O44n75UfAfv9Ipn5YC-wLCDGAw">
+            </div>
+            <div class="question_box_top pre-question">
+                <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+                <button 
+                    onclick="pre_question_q8_option_a_item1()"
+                    class="btn btn-default">سوال قبلی
+                </button>
+            </div>
+        </div>
+    
+    <!-- Question 8 - Option e -->
+    <div class="question_box" id="question8_option_e">
+        <div class="question_box_top">
+                <p>زبان Java رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="java-Logo" src="https://academy.oracle.com/en/oa-assets/i/c82/c82-java-prog-logo.jpg">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q8_option_e()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+    
+    <!-- Question 8 - Option f -->
+    <div class="question_box" id="question8_option_f">
+        <div class="question_box_top">
+            <p>می خواهم برای شرکت های بزرگ تکنولوژی کار کنم!</p>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question8_option_f_gozine1()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">Apple</button>
+                </p>
+                <p>
+                    <button onclick="question8_option_f_gozine2()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">Google</button>
+                </p>
+                <p>
+                    <button onclick="question8_option_f_gozine2()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">Facebook</button>
+                </p>
+                <p>
+                    <button onclick="question8_option_f_gozine4()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">Microsoft</button>
+                </p>
+
+                <div class="pre-question">
+                    <!-- fa: pre_questiony ke dar soal3 namayan ast -->
+                    <button onclick="pre_question_q8_option_f()" class="btn btn-default col-md-4">سوال قبلی</button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <!-- Question 8 - Option f - item 1 -->
+    <div class="question_box" id="question8_option_f_gozine1">
+        <div class="question_box_top">
+                    <p>زبان Objective-C رو یاد بگیر!</p>
+            </div>
+            <hr>
+            <div>
+                <img class="language_pics" alt="Objective-C Logo" src="http://blog.ittestsonline.com/wp-content/uploads/2015/01/objective-c.gif">
+            </div>
+            <div class="question_box_top pre-question">
+                <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+                <button 
+                    onclick="pre_question_q8_option_f_item1()"
+                    class="btn btn-default">سوال قبلی
+                </button>
+            </div>
+    </div>
+    
+    <!-- Question 8 - Option f - item2 and item3 -->
+    <div class="question_box" id="question8_option_f_gozine2">
+        <div class="question_box_top">
+                <p>زبان پایتون رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="https://www.raspberrypi.org/documentation/usage/python/images/python-logo.png">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q8_option_f_item1()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+    
+    <!-- Question 8 - Option f - item4 -->
+    <div class="question_box" id="question8_option_f_gozine4">
+        <div class="question_box_top">
+                <p>زبان سی شارپ رو یاد بگیر!</p>
+        </div>
+        <hr>
+        <div>
+            <img class="language_pics" alt="Python Logo" src="https://uploads.toptal.io/blog/category/logo/16/c_sharp.png">
+        </div>
+        <div class="question_box_top pre-question">
+            <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+            <button 
+                onclick="pre_question_q8_option_f_item1()"
+                class="btn btn-default">سوال قبلی
+            </button>
+        </div>
+    </div>
+    
+    <!-- Question 9 -->
+    <div class="question_box" id="q9">
+        <div class="question_box_top">
+            <p>میخواهم کار کنم برای ...</p>
+        </div>
+        <hr>
+        <div class="row">
+            <!-- fa: fazaye khali samte chape gozineha -->
+            <div class="col-md-3"></div>
+
+            <div class="question_options col-md-6 col-sm-12 col-xs-12">
+                <p>
+                    <button onclick="question9_option_a()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">یک شرکت</button>
+                </p>
+                <p>
+                    <button onclick="question9_option_b()" class="btn btn-primary btn-lg col-md-12 col-sm-12 col-xs-12">یک استارت آپ</button>
+                </p>
+            </div>
+        </div>    
+        
+        <div class="question_box_top pre-question">
+             <!-- fa: pre_questiony ke dar soal1_optionB namayan ast -->
+             <button 
+                  onclick="pre_question_q9()"
+                class="btn btn-default">سوال قبلی
+             </button>
+        </div>
+    </div>
+   
+    </div>    
+   
+    
+    
+    <!-- div for all JS codes -->
+    <div>
+    <script>
+        /* fa: baray in ke vagti dar soal 4 back ro mizani, be kodom soal bargardim. baste be inke position chiye, yani az kodom samt omade bashim, back motafavet khahad bod. */
+        var pos4;
+        var back_to_4or8, back_to_4or8_game, back_to_4or9or8, back_to_4Aor9;
+        function start_btn() {
+            document.getElementById('what_is_it').style.display = 'none';
+            document.getElementById('start_btn_id').style.display = 'none';
+            document.getElementById('q1').style.display = 'block';
+        }
+        
+        function question1_option_a() {
+            document.getElementById('question1_option_a').style.display = 'block';
+            document.getElementById('q1').style.display = 'none';
+            document.getElementById('q3').style.display = 'none';    
+        }
+            function question1_option_a_gozine2() {
+                document.getElementById('question1_option_a').style.display = 'none';
+                document.getElementById('q3').style.display = 'block';    
+            }
+            function question1_option_a_gozine1() {
+                pos4 = "right";
+                document.getElementById('question1_option_a').style.display = 'none';
+                document.getElementById('q4').style.display = 'block';    
+            }
+        function question1_option_b() {
+            document.getElementById('q1').style.display = 'none';            
+            document.getElementById('question1_option_b').style.display = 'block';
+        }
+        function question1_option_c() {
+            document.getElementById('q1').style.display = 'none';            
+            document.getElementById('question1_option_c').style.display = 'block';
+        }
+            function question1_option_c_gozine1(){
+                document.getElementById('question1_option_c').style.display = 'none';
+                document.getElementById('q8').style.display = 'block';
+            }
+            function question1_option_c_gozine2(){
+                pos4 = "left";
+                document.getElementById('question1_option_c').style.display = 'none';
+                document.getElementById('q4').style.display = 'block';
+            }
+        
+        function question1_option_f() {
+            document.getElementById('q1').style.display = 'none';            
+            document.getElementById('question1_option_f').style.display = 'block';
+        }
+        
+        function pre_question_q1_option_a() {
+            document.getElementById('q1').style.display = 'block';
+            document.getElementById('question1_option_a').style.display = 'none';
+        }
+        function pre_question_q1_option_b() {
+            document.getElementById('q1').style.display = 'block';
+            document.getElementById('question1_option_b').style.display = 'none';  
+        }
+        function pre_question_q1_option_c() {
+            document.getElementById('q1').style.display = 'block';
+            document.getElementById('question1_option_c').style.display = 'none';  
+        }
+        function pre_question_q1_option_d() {
+            document.getElementById('q1').style.display = 'block';
+            document.getElementById('question1_option_d').style.display = 'none';  
+        }
+        function pre_question_q1_option_e() {
+            document.getElementById('q1').style.display = 'block';
+            document.getElementById('question1_option_e').style.display = 'none';  
+        }
+        function pre_question_q1_option_f() {
+            document.getElementById('q1').style.display = 'block';
+            document.getElementById('question1_option_f').style.display = 'none';  
+        }
+        
+        function pre_question_q3() {
+            document.getElementById('question1_option_a').style.display = 'block';
+            document.getElementById('q3').style.display = 'none';  
+        }
+        function question3_option_a() {
+            document.getElementById('q3').style.display = 'none';            
+            document.getElementById('question3_option_a').style.display = 'block';    
+        }
+        function question3_option_c() {
+            document.getElementById('q3').style.display = 'none';            
+            document.getElementById('question3_option_c').style.display = 'block';    
+        }
+        function question3_option_d() {
+            document.getElementById('q3').style.display = 'none';            
+            document.getElementById('question3_option_d').style.display = 'block';    
+        }
+        
+        function pre_question_q3_option_a() {
+            document.getElementById('question3_option_a').style.display = 'none';
+            document.getElementById('q3').style.display = 'block';    
+        }
+        function pre_question_q3_option_b() {
+            document.getElementById('question3_option_b').style.display = 'none';
+            document.getElementById('q3').style.display = 'block';    
+        }
+        function pre_question_q3_option_c() {
+            document.getElementById('question3_option_c').style.display = 'none';
+            document.getElementById('q3').style.display = 'block';    
+        }
+            
+        function q3_option_c_item1() {
+            document.getElementById('question3_option_c').style.display = 'none';
+            document.getElementById('question3_option_c_item1').style.display = 'block';    
+        }
+        function q3_option_c_item2() {
+            document.getElementById('question3_option_c').style.display = 'none';
+            document.getElementById('question3_option_c_item2').style.display = 'block';    
+        }      
+        
+        function pre_question_q3_option_d() {
+            document.getElementById('question3_option_d').style.display = 'none';
+            document.getElementById('q3').style.display = 'block';    
+        }
+        function pre_question_q3_option_c_item1() {
+            document.getElementById('question3_option_c_item1').style.display = 'none';
+            document.getElementById('question3_option_c').style.display = 'block';    
+        }
+        function pre_question_q3_option_c_item2() {
+            document.getElementById('question3_option_c_item2').style.display = 'none';
+            document.getElementById('question3_option_c').style.display = 'block';    
+        }
+        
+        function question4_option_a() {
+            document.getElementById('q4').style.display = 'none';            
+            document.getElementById('question4_option_a').style.display = 'block';    
+        }
+            function question4_option_a_gozine1(){
+                document.getElementById('question4_option_a').style.display = 'none';
+                document.getElementById('question4_option_a_gozine1').style.display = 'block';
+            }
+            function question4_option_a_gozine2(){
+                back_to_4Aor9 = 4;
+                document.getElementById('question4_option_a').style.display = 'none';
+                document.getElementById('q6').style.display = 'block';
+            }
+        function question4_option_b() {
+            back_to_4or8 = 4;
+            document.getElementById('q4').style.display = 'none';            
+            document.getElementById('question4_option_b').style.display = 'block';    
+        }
+            function question4_option_b_gozine1() {
+                document.getElementById('question4_option_b').style.display = 'none';
+                document.getElementById('question4_option_b_item1').style.display = 'block';    
+            }
+            function question4_option_b_gozine2() {
+                document.getElementById('question4_option_b').style.display = 'none';
+                document.getElementById('question4_option_b_item2').style.display = 'block';    
+            }
+        function question4_option_c() {
+            back_to_4or8_game = 4;
+            document.getElementById('q4').style.display = 'none';            
+            document.getElementById('question4_option_c').style.display = 'block';    
+        }
+        function question4_option_d() {
+            back_to_4or9or8 = 4;
+            document.getElementById('q4').style.display = 'none';            
+            document.getElementById('q5').style.display = 'block';    
+        }
+        function pre_question_q4_option_a_item1() {
+            document.getElementById('question4_option_a_gozine1').style.display = 'none';
+            document.getElementById('question4_option_a').style.display = 'block';    
+        }
+        function pre_question_q4_option_b_item1() {
+            document.getElementById('question4_option_b_item1').style.display = 'none';
+            document.getElementById('question4_option_b').style.display = 'block';    
+        }
+        function pre_question_q4_option_b_item2() {
+            document.getElementById('question4_option_b_item2').style.display = 'none';
+            document.getElementById('question4_option_b').style.display = 'block';    
+        }
+        
+        function pre_question_q4_option_a() {
+            document.getElementById('q4').style.display = 'block';
+            document.getElementById('question4_option_a').style.display = 'none';
+        }
+        function pre_question_q4_option_b() {
+            if (back_to_4or8 == 4){
+                document.getElementById('q4').style.display = 'block';
+                document.getElementById('question4_option_b').style.display = 'none';
+                }
+            else{
+                document.getElementById('q8').style.display = 'block';
+                document.getElementById('question4_option_b').style.display = 'none';
+            }
+        }
+        function pre_question_q4_option_c() {
+            if (back_to_4or8_game == 4){
+                document.getElementById('q4').style.display = 'block';
+                document.getElementById('question4_option_c').style.display = 'none';
+                }
+            else{
+                document.getElementById('q8').style.display = 'block';
+                document.getElementById('question4_option_c').style.display = 'none';
+            }
+        }
+        function pre_question_q4() {
+            document.getElementById('q4').style.display = 'none';
+            if (pos4 == "right"){
+                document.getElementById('question1_option_a').style.display = 'block';}
+            else{
+                document.getElementById('question1_option_c').style.display = 'block';}
+        }
+        
+        function question5_option_a() {
+            document.getElementById('question5_option_a').style.display = 'block';
+            document.getElementById('q5').style.display = 'none';
+        }
+        function question5_option_b() {
+            document.getElementById('question5_option_b').style.display = 'block';
+            document.getElementById('q5').style.display = 'none';
+        }
+        function pre_question_q5() {
+            document.getElementById('q5').style.display = 'none';
+            if (back_to_4or9or8 == 4){
+                document.getElementById('q4').style.display = 'block';}
+            else if(back_to_4or9or8 == 9){
+                document.getElementById('q9').style.display = 'block';
+            }
+            else {
+                document.getElementById('q8').style.display = 'block';
+            }
+        }
+        function pre_question_q5_option_a() {
+            document.getElementById('q5').style.display = 'block';
+            document.getElementById('question5_option_a').style.display = 'none';
+        }
+        function pre_question_q5_option_b() {
+            document.getElementById('q5').style.display = 'block';
+            document.getElementById('question5_option_b').style.display = 'none';
+        }
+        
+        function question6_option_a() {
+            document.getElementById('q6').style.display = 'none';
+            document.getElementById('q7').style.display = 'block';
+        }
+        function question6_option_b() {
+            document.getElementById('question6_option_b').style.display = 'block';
+            document.getElementById('q6').style.display = 'none';
+        }
+        function pre_question_q6_option_b() {
+            document.getElementById('q6').style.display = 'block';
+            document.getElementById('question6_option_b').style.display = 'none';
+        }
+        function pre_question_q6() {
+            document.getElementById('q6').style.display = 'none';
+            if (back_to_4Aor9 == 4){
+                document.getElementById('question4_option_a').style.display = 'block';}
+            else{
+                document.getElementById('q9').style.display = 'block';}
+        }
+        function pre_question_q7() {
+            document.getElementById('q6').style.display = 'block';
+            document.getElementById('q7').style.display = 'none';
+        }
+        
+        function question7_option_a() {
+            document.getElementById('question7_option_a').style.display = 'block';
+            document.getElementById('q7').style.display = 'none';
+        }
+        function question7_option_b() {
+            document.getElementById('question7_option_b').style.display = 'block';
+            document.getElementById('q7').style.display = 'none';
+        }
+        function question7_option_c() {
+            document.getElementById('question7_option_c').style.display = 'block';
+            document.getElementById('q7').style.display = 'none';
+        }
+        function pre_question_q7_option_a() {
+            document.getElementById('q7').style.display = 'block';
+            document.getElementById('question7_option_a').style.display = 'none';
+        }
+        function pre_question_q7_option_b() {
+            document.getElementById('q7').style.display = 'block';
+            document.getElementById('question7_option_b').style.display = 'none';
+        }
+        function pre_question_q7_option_c() {
+            document.getElementById('q7').style.display = 'block';
+            document.getElementById('question7_option_c').style.display = 'none';
+        }
+        
+        function question8_option_a() {
+            document.getElementById('question8_option_a').style.display = 'block';
+            document.getElementById('q8').style.display = 'none';
+        }
+        function question8_option_b() {
+            back_to_4or8 = 8;
+            document.getElementById('question4_option_b').style.display = 'block';
+            document.getElementById('q8').style.display = 'none';
+        }
+        function question8_option_c() {
+            back_to_4or8_game = 8;
+            document.getElementById('question4_option_c').style.display = 'block';
+            document.getElementById('q8').style.display = 'none';
+        }
+        function question8_option_d() {
+            back_to_4or9or8 = 8;
+            document.getElementById('q5').style.display = 'block';
+            document.getElementById('q8').style.display = 'none';
+        }
+        function question8_option_e() {
+            document.getElementById('q8').style.display = 'none';            
+            document.getElementById('question8_option_e').style.display = 'block';
+        }
+        function question8_option_f() {
+            document.getElementById('q8').style.display = 'none';            
+            document.getElementById('question8_option_f').style.display = 'block';
+        }
+        function question8_option_f_gozine1() {
+            document.getElementById('question8_option_f').style.display = 'none';  
+            document.getElementById('question8_option_f_gozine1').style.display = 'block';
+        }
+        function question8_option_f_gozine2() {
+            document.getElementById('question8_option_f').style.display = 'none';  
+            document.getElementById('question8_option_f_gozine2').style.display = 'block';
+        }
+        function question8_option_f_gozine4() {
+            document.getElementById('question8_option_f').style.display = 'none';  
+            document.getElementById('question8_option_f_gozine4').style.display = 'block';
+        }
+        function pre_question_q8_option_f_item1() {
+            document.getElementById('question8_option_f_gozine1').style.display = 'none';
+            document.getElementById('question8_option_f_gozine2').style.display = 'none';
+            document.getElementById('question8_option_f_gozine4').style.display = 'none';
+            document.getElementById('question8_option_f').style.display = 'block';    
+        }
+        function pre_question_q8_option_e() {
+            document.getElementById('q8').style.display = 'block';            
+            document.getElementById('question8_option_e').style.display = 'none';
+        }
+        
+            function question8_option_a_gozine1() {
+                document.getElementById('question8_option_a').style.display = 'none';
+                document.getElementById('question8_option_a_gozine1').style.display = 'block';
+            }
+            function question8_option_a_gozine2() {
+                document.getElementById('question8_option_a').style.display = 'none';
+                document.getElementById('q9').style.display = 'block';
+            }
+        function pre_question_q8_option_a() {
+            document.getElementById('q8').style.display = 'block';
+            document.getElementById('question8_option_a').style.display = 'none';
+        }
+        function pre_question_q8_option_f() {
+            document.getElementById('q8').style.display = 'block';
+            document.getElementById('question8_option_f').style.display = 'none';
+        }
+        function pre_question_q8() {
+            document.getElementById('q1').style.display = 'block';
+            document.getElementById('q8').style.display = 'none';
+        }
+        function pre_question_q8_option_a_item1() {
+            document.getElementById('question8_option_a_gozine1').style.display = 'none';
+            document.getElementById('question8_option_a').style.display = 'block';    
+        }
+        function pre_question_q8_option_a_item2() {
+            document.getElementById('question8_option_a_gozine1').style.display = 'none';
+            document.getElementById('question8_option_a').style.display = 'block';    
+        }
+        
+        function question9_option_a() {
+            back_to_4or9or8 = 9;
+            document.getElementById('q5').style.display = 'block';
+            document.getElementById('q9').style.display = 'none';
+        }
+        function question9_option_b() {
+            back_to_4Aor9 = 9;
+            document.getElementById('q6').style.display = 'block';
+            document.getElementById('q9').style.display = 'none';
+        }
+        function pre_question_q9() {
+            document.getElementById('question8_option_a').style.display = 'block';
+            document.getElementById('q9').style.display = 'none';
+        }
+    </script>
+    </div>
+</body>
+</html>
